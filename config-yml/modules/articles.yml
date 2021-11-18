@@ -1,0 +1,31 @@
+display: true
+title: Notre actualité
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#importer les images dans public/assets/imgs/articles (de la même taille si possible)
+articles:
+  - title: titre 1
+    category: catégorie A
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    image: hanguy.jpg
+    title_content: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    content: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    slug: article-1
+
+  - title: titre 2
+    category: catégorie B
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    image: hanguy.jpg
+    title_content: Lorem ipsum
+    content: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    slug: article-2
+
+  - title: titre 3
+    category: catégorie C
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    image: hanguy.jpg
+    title_content: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    content: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    slug: article-3

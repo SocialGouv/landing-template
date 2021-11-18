@@ -1,0 +1,31 @@
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+menuList:
+  - name: google.fr
+    url: https://google.fr/
+
+#importer les images dans public/assets/imgs/sponsors
+principalSponsor:
+  - image: logo fabrique.png
+    url: https://www.fabrique.social.gouv.fr/
+
+sponsors:
+  - image: Logo ARSNA.png
+    url: https://www.nouvelle-aquitaine.ars.sante.fr/
+
+  - image: logo ARSIDF.jpeg
+    url: https://www.iledefrance.ars.sante.fr/
+
+  - image: logo-arsguy.jpeg
+    url: https://www.guyane.ars.sante.fr/
+
+bottomMenuList:
+  - name: Mentions légales
+    slug: mentions-legales
+
+  - name: Données personnelles et cookies
+    slug: donnees-personnelles
+
+  - name: Accessibilité
+    slug: accessibilite
+
+copyright: © République Française 2020

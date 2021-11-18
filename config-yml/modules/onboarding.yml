@@ -1,0 +1,33 @@
+display: true
+title: Lorem ipsum
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+image: referent.jpg
+
+form_section_title: Lorem ipsum dolor sit amet
+list_section_title: Lorem ipsum dolor sit amet
+
+register_lastname: Nom
+register_firstname: Prénom
+register_email: Adresse mail
+register_job: Secteur d'activité / métier
+
+
+list_section_items:
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+#importer les images dans public/assets/imgs/testimony (témoignage)
+testimony:
+  - title: Lorem ipsum dolor sit amet
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra, risus nisl, leo accumsan elementum ligula magna. Malesuada arcu neque nulla augue ornare felis eget nisl.
+    image: connor-wilkins.jpg
+
+  - title: Lorem ipsum dolor sit amet 2
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit 2.
+    image: connor-wilkins.jpg
+

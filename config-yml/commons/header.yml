@@ -1,0 +1,13 @@
+mainTitle: Lorem ipsum dolor sit amet
+
+subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+app_access_link: http://www.google.fr/
+
+googleplay_link: http://www.google.com/
+
+appStore_link: http://www.google.com/
+
+#importer les images dans public/assets/imgs/header (idem pour le qrcode)
+image_prototype_name: logo-de-la-republique-francaise.png
+qr_code:

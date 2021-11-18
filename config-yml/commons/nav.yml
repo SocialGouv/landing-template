@@ -1,0 +1,12 @@
+menuList:
+  - name: Accueil
+    slug: /
+
+  - name: Actualités
+    slug: /actualites
+
+  - name: Référent
+    slug: /onboarding
+
+contact: Contact
+contact_mailto: contact-test@gmail.com
