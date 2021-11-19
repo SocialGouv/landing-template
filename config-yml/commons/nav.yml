@@ -8,5 +8,8 @@ menuList:
   - name: Référent
     slug: /onboarding
 
+  - name: Statistiques
+    slug: /stats
+
 contact: Contact
 contact_mailto: contact-test@gmail.com

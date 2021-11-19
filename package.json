@@ -18,7 +18,7 @@
     "react-dom": "^17.0.2",
     "react-leaflet": "^3.1.0",
     "react-slick": "^0.28.1",
-    "recharts": "^2.0.10",
+    "recharts": "^2.1.6",
     "sass": "^1.32.10",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.3"
