@@ -1,15 +1,52 @@
 display: true
-title: Les stats
-#Placer les icones dans le dossier public/assets/imgs/icons
-stats:
-  - title: KPI 1
-    value: 1000
-    icon_name: trending-up.svg
+home:
+  title: Les stats
+  #Placer les icones dans le dossier public/assets/imgs/icons
+  stats:
+    - title: KPI 1
+      value: 1000
+      icon_name: trending-up.svg
 
-  - title: KPI 2
-    value: 2000
-    icon_name: target.svg
+    - title: KPI 2
+      value: 2000
+      icon_name: target.svg
 
-  - title: KPI 3
-    value: 3000
-    icon_name: award.svg
+    - title: KPI 3
+      value: 3000
+      icon_name: award.svg
+page:
+  title: Statistiques
+  chartWidth: 700
+  chartHeight: 350
+  kpis:
+    - titre: Lorem ipsum
+      name: Connexions par jour
+      affichage: graph
+      type: lineChart
+      valeurs:
+        2021-05-21: 10
+        2021-06-22: 40
+        2021-08-29: 10
+        2021-10-30: 150
+
+    - titre: Lorem ipsum
+      name: Téléchargements par jour
+      affichage: graph
+      type: barChart
+      valeurs:
+        2021-06-21: 39
+        2021-06-22: 45
+        2021-06-23: 51
+
+    - titre: Lorem ipsum
+      name: Visites par jour
+      affichage: graph
+      type: barChart
+      valeurs:
+        2021-06-21: 43
+        2021-06-22: 10
+        2021-06-23: 6
+
+    - titre: Temps moyen sur l'app
+      affichage: chiffre_cle
+      valeur: 4min02
