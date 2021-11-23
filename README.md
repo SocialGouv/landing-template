@@ -1,50 +1,72 @@
-# Landing page dynamique
+# Landing page La Fabrique
 
-## Modifier le site
+## Developpement
 
-Cloner le repo puis :
 
+TIPS: ce repo contient un sous-module, pour cloner simplement :
+`git clone --recursive url.git`
+
+**Lancer le projet**
 ```sh
 yarn
 yarn dev
 ```
-L'objectif est que n'importe quel projet de la fabrique puisse utiliser cette landing page facilement intégrable.
+## Modifier vos contenus
 
-## C'est quoi un module ?
-Les modules sont les différents composants de la landing page qu'il faudra modifier.
-La liste des modules actuellement :
- - Actualites (config-yml/modules/articles.yml) 
- - Stats (config-yml/modules/stats.yml) 
- - Newsletter (config-yml/modules/newsletter.yml) 
- - Onboarding (config-yml/modules/onboarding.yml) 
- - Instagram (config-yml/modules/instagram.yml) 
+Le dossier `/config-yml` contient l'ensemble des contenus de la landing page.
 
-1) Pour le module instagram (récupérer les publications), il faut suivre ces instructions :
+`/config-yml/commons` : contenus requis pour la landing (header / footer / navigation)
 
-    - Créer une application sur : https://developers.facebook.com/apps/create/
-    - Choisir "Consommateur" puis cliquez sur "Suivant"
-    - Renseigner les informations demandées
-    - Cliquer sur "Configurer" dans la partie "Instagram Basic Display"
-    - Cliquer sur le bouton "Créer une application" (puis encore une fois lorque la nouvelle popup s'affiche)
-    - Renseigner les 3 champs : URI de redirection OAuth valides, URL d’alerte pour les annulations d’autorisation, Demandes de suppression de données par l'url de votre site ou si Local: https://localhost:{numéro de port}/  
-    - Dans la partie User Token Generator, cliquer sur le bouton "Add or Remove Instagram Testers".
-    - Dans la partie Instagram Testers, cliquer sur le bouton "Add Instagram Testers" puis renseigner le nom instagram
-    - Se connecter sur son compte instagram et aller dans les paramètres -> Apps et sites web -> onglet "Invitations à tester" puis cliquer sur Accepter
-    - Revenir sur facebook developers et cliquer sur le menu à gauche : Instagram Basic Display -> Basic Display
-    - Dans la partie User Token Generator, cliquer sur "Generate Token", se connecter au compte instagram puis cliquer sur Autoriser. Cocher la case : 'I Understand' puis copier le token
-    - Créer un fichier .env.local à la racine du projet et noter cette paire de clé/valeur : NEXT_PUBLIC_INSTAGRAM_TOKEN="coller le token ici"
-    - Relancer le projet : yarn dev
+`/config-yml/legals` : contenus relatifs aux obligations RGPD.
+
+`/config-yml/modules` : modules complémentaires développés par la communauté, voir section suivante.
+
+## Modifier vos images
+
+Toutes les images du dossier `/public/assets/imgs` sont accessible ensuite sur votre landing. Dans vos fichiers yml, indiquez simplement le chemin à partir de ce dossier.
+
+## Les modules
+Les modules sont des composants de la landing que vous pouvez **activer** / **désactiver**
+
+|  Nom du module | Fonctionnalités  | Fichier de configuration  | Spécificités 
+|---|---|---|---|
+| Actualités   |  <ul><li>Bloc sur la page d'accueil (derniers articles)</li><li>Page list des actualités `/actualites`</li><li>Page pour chaque actualité</li></ul> | `articles.yml`  | [Oui](#module-actualites)  |
+|  Statistiques | <ul><li>Bloc KPI sur la page d'accueil</li><li>Page de statistiques `/stats`</li></ul> | `stats.yml`  | [Oui](#module-stats)  |
+| Newsletter  | <ul><li>Bloc sur la page d'accueil</li></ul>  | `newsletter.yml`   |  [Oui](#module-newsletter) |
+| Onboarding  | <ul><li>Bloc sur la page d'accueil</li><li>Page formulaire d'onboarding `/onboarding`</li></ul>  | `onboarding.yml`   |  [Oui](#module-onboarding) |
+| Instagram  | <ul><li>Bloc feed instagram sur la page d'accueil</li></ul>  | `instagram.yml`   |  [Oui](#module-instagram) |
 
 
-2) Pour les modules d'actualités et Onboarding (référent), il y a des pages spécifiques, les menus sont ajoutés dans config-yml/nav.yml et leurs pages sont créees dans le dossier : src/pages/
+#### <a name="module-actualites">Actualités</a>
+
+La propriété `articles` du fichier yml est une list, vous pouvez ajouter des articles à la suite pour les publier.
+
+La propriété `image` doit être le nom de l'image contenue dans le dossier `/public/assets/img/articles`.
+
+#### <a name="module-instagram">Instagram</a>
+
+L'application a besoin d'un token instagram pour récupérer les posts et les afficher.
+Ajoutez `NEXT_PUBLIC_INSTAGRAM_TOKEN=votretokenhashé` dans les sealed-secrets. (https://socialgouv.github.io/sre-tools/ pour encrypter votre token)
 
 
-## Comment contribuer ? (dev)
-Pour créer un module :
+#### <a name="module-stats">Statistiques</a>
 
-1) Coder le module dans src/
-2) Rajouter le fichier .yml dans config-yml/modules
-3) Si pages spécifiques, le renseigner dans le readme
-4) Créer une pull request sur git
+La propriété `kpis` du fichier yml est une list, vous pouvez ajouter des graphs à la suite.
+Pour chaque graph, les attributs disponibles pour la propriété `type` sont :
+- lineChart ([exemple](https://recharts.org/en-US/examples/SimpleLineChart))
+- barChart ([exemple](https://recharts.org/en-US/examples/SimpleBarChart))
 
-Tout les modules peuvent être activés ou non en mettant la valeur du champ display à true ou false dans le fichier .yml
+
+#### <a name="module-onboarding">Onboarding</a>
+
+Le module d'onboarding contient une page avec un formulaire personnalisable.
+Une requête POST est envoyée à la route spécifiée avec un payload dynamique en fonction des attributs `name` attribués au champs.
+
+
+## Contribuer
+
+Vous souhaitez créer un nouveau module dans la landing page ? Quelle belle initiative!
+
+Afin que les autres startup puissent aussi en profiter, développez dans le sous-module git vers lequel pointe le dossier `/src`
+
+Vous trouverez toutes les indications dans [ici dans le README](https://github.com/SocialGouv/landing-core).
