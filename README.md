@@ -51,7 +51,7 @@ Ajoutez `NEXT_PUBLIC_INSTAGRAM_TOKEN=votretokenhashé` dans les sealed-secrets. 
 
 #### <a name="module-stats">Statistiques</a>
 
-La propriété `kpis` du fichier yml est une list, vous pouvez ajouter des graphs à la suite.
+La propriété `page.graphs` du fichier yml est une list, vous pouvez ajouter des graphs à la suite.
 Pour chaque graph, les attributs disponibles pour la propriété `type` sont :
 - lineChart ([exemple](https://recharts.org/en-US/examples/SimpleLineChart))
 - barChart ([exemple](https://recharts.org/en-US/examples/SimpleBarChart))

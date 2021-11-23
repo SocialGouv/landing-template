@@ -2,7 +2,7 @@ display: true
 home:
   title: Les stats
   #Placer les icones dans le dossier public/assets/imgs/icons
-  stats:
+  kpis:
     - title: KPI 1
       value: 1000
       icon_name: trending-up.svg
@@ -18,7 +18,7 @@ page:
   title: Statistiques
   chartWidth: 700
   chartHeight: 350
-  kpis:
+  graphs:
     - titre: Lorem ipsum
       name: Connexions par jour
       affichage: graph
