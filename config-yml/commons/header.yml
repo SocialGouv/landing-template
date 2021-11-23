@@ -1,4 +1,4 @@
-mainTitle: Lorem ipsum dolor sit amet
+mainTitle: Votre landing 😎
 
 subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
@@ -9,5 +9,5 @@ googleplay_link: http://www.google.com/
 appStore_link: http://www.google.com/
 
 #importer les images dans public/assets/imgs/header (idem pour le qrcode)
-image_prototype_name: logo-de-la-republique-francaise.png
+image_prototype_name: header-logo.png
 qr_code:
