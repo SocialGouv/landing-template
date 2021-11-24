@@ -32,3 +32,5 @@ jobs:
         kubeconfig: ${{ secrets.KUBECONFIG }}
         rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
         socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
+        dockerbuildargs: |
+          NEXT_PUBLIC_INSTAGRAM_TOKEN=instagram_token_dev
