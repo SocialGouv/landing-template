@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - uses: SocialGouv/actions/autodevops-release@v1
+    - uses: SocialGouv/actions/autodevops-release@submodules
       with:
         author-name: ${{ secrets.SOCIALGROOVYBOT_NAME }}
         author-email: ${{ secrets.SOCIALGROOVYBOT_EMAIL }}
