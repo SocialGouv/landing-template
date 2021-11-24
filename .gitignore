@@ -2,8 +2,4 @@ node_modules
 .next
 .env.local
 report.*
-yarn.lock
 .idea
-package-lock.json
-.releaserc.yml
-.gitlab-ci.yml
