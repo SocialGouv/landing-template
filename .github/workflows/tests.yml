@@ -12,26 +12,6 @@ concurrency:
 jobs:
 
   ##############################################################################
-  ## LINT CODE
-  ##############################################################################
-  lint:
-    name: Test application
-    runs-on: ubuntu-latest
-    steps:
-
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Yarn cache setup
-      uses: c-hive/gha-yarn-cache@v2
-
-    - name: Install dependencies
-      run: yarn --frozen-lockfile --prefer-offline
-
-    - name: Run lint
-      run: yarn lint
-
-  ##############################################################################
   ## TEST APPLICATION
   ##############################################################################
   test:
@@ -49,9 +29,6 @@ jobs:
 
     - name: Install dependencies
       run: yarn --frozen-lockfile --prefer-offline
-
-    - name: Run lint
-      run: yarn lint
 
     - name: Run tests
       run: yarn test --coverage

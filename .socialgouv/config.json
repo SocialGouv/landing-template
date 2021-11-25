@@ -1,6 +1,7 @@
 {
   "name": "www",
   "type": "static",
+  "registry": "ghcr",
   "project": "landing-template",
   "subdomain": "landing-template"
 }
