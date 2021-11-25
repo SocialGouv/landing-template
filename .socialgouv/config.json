@@ -1,5 +1,6 @@
 {
+  "name": "www",
   "type": "static",
-  "name": "landing-template",
+  "project": "landing-template",
   "subdomain": "landing-template"
 }
