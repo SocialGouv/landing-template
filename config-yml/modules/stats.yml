@@ -1,5 +1,5 @@
-display: true
 home:
+  display: true
   title: Les stats
   #Placer les icones dans le dossier public/assets/imgs/icons
   kpis:
