@@ -1,5 +1,7 @@
 {
-  "name": "landing",
-  "type": "static",
-  "subdomain": "landing"
+  "name": "www",
+  "type": "app",
+  "registry": "ghcr",
+  "project": "landing-template",
+  "subdomain": "landing-template"
 }
