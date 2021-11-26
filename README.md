@@ -46,7 +46,7 @@ La propriété `image` doit être le nom de l'image contenue dans le dossier `/p
 #### <a name="module-instagram">Instagram</a>
 
 L'application a besoin d'un token instagram pour récupérer les posts et les afficher.
-Ajoutez `NEXT_PUBLIC_INSTAGRAM_TOKEN=votretokenhashé` dans les sealed-secrets. (https://socialgouv.github.io/sre-tools/ pour encrypter votre token)
+Ajoutez `INSTAGRAM_TOKEN=votretokenhashé` dans les sealed-secrets. (https://socialgouv.github.io/sre-tools/ pour encrypter votre token)
 
 
 #### <a name="module-stats">Statistiques</a>
