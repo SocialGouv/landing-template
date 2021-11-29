@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/SocialGouv/landing-template/compare/v1.0.0...v1.0.1) (2021-11-29)
+
+
+### Bug Fixes
+
+* **deps:** update all dependencies ([060749d](https://github.com/SocialGouv/landing-template/commit/060749da8f2f48d569ea5101740ff3e9d158f3b7))
+
 # 1.0.0 (2021-11-26)
 
 
