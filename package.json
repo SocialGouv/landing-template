@@ -19,7 +19,7 @@
     "react-leaflet": "^3.2.2",
     "react-slick": "^0.28.1",
     "recharts": "^2.1.6",
-    "sass": "^1.32.13",
+    "sass": "^1.43.5",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3"
   },
