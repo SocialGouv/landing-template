@@ -26,9 +26,9 @@ Le dossier `/config-yml` contient l'ensemble des contenus de la landing page.
 Toutes les images du dossier `/public/assets/imgs` sont accessible ensuite sur votre landing. Dans vos fichiers yml, indiquez simplement le chemin à partir de ce dossier.
 
 ## Les modules
-Les modules sont des composants de la landing que vous pouvez **activer** / **désactiver**
+Les modules sont des composants de la landing que vous pouvez **activer** / **désactiver** en modifiant la valeur du champ `display` dans les fichiers yaml.
 
-|  Nom du module | Fonctionnalités  | Fichier de configuration  | Spécificités 
+|  Nom | Fonctionnalités  | Fichier yml  | Spécificités 
 |---|---|---|---|
 | Actualités   |  <ul><li>Bloc sur la page d'accueil (derniers articles)</li><li>Page list des actualités `/actualites`</li><li>Page pour chaque actualité</li></ul> | `articles.yml`  | [Oui](#module-actualites)  |
 |  Statistiques | <ul><li>Bloc KPI sur la page d'accueil</li><li>Page de statistiques `/stats`</li></ul> | `stats.yml`  | [Oui](#module-stats)  |
