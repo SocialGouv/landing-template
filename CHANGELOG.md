@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/SocialGouv/landing-template/compare/v1.0.2...v1.1.0) (2021-12-03)
+
+
+### Features
+
+* update newsletter yml to match new version ([57a1116](https://github.com/SocialGouv/landing-template/commit/57a11161134510f310e06e71cb33cf2bf644d63b))
+
 ## [1.0.2](https://github.com/SocialGouv/landing-template/compare/v1.0.1...v1.0.2) (2021-11-29)
 
 
