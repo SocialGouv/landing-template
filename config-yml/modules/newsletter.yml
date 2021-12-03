@@ -1,5 +1,8 @@
 display: true
 title: Newsletter Lorem ipsum
 subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-url: https://backend-tumeplay.fabrique.social.gouv.fr/
-
+url: https://backend-tumeplay.fabrique.social.gouv.fr/contacts
+email_fieldname: email
+fields:
+  - name: "type"
+    value: "newsletter"
