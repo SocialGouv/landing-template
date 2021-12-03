@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/SocialGouv/landing-template/compare/v1.1.0...v1.2.0) (2021-12-03)
+
+
+### Bug Fixes
+
+* onboarding home wording example ([86987ff](https://github.com/SocialGouv/landing-template/commit/86987ff592a6f3129cd91356c67ea54b61566c0e))
+
+
+### Features
+
+* update onboarding yml matching onboarding changes ([2ae27ee](https://github.com/SocialGouv/landing-template/commit/2ae27eeab6dc2f1b209612ee7fa12f3dfc0c7f91))
+
 # [1.1.0](https://github.com/SocialGouv/landing-template/compare/v1.0.2...v1.1.0) (2021-12-03)
 
 
