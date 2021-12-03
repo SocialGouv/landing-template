@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/SocialGouv/landing-template/compare/v1.2.0...v1.3.0) (2021-12-03)
+
+
+### Features
+
+* rename newsletter fields to hidden_fields & update README with recent updates ([cbaf203](https://github.com/SocialGouv/landing-template/commit/cbaf203b7d3f4227b838b68aada9f765de5f12bb))
+
 # [1.2.0](https://github.com/SocialGouv/landing-template/compare/v1.1.0...v1.2.0) (2021-12-03)
 
 
