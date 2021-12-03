@@ -6,11 +6,42 @@ image: referent.jpg
 form_section_title: Lorem ipsum dolor sit amet
 list_section_title: Lorem ipsum dolor sit amet
 
-register_lastname: Nom
-register_firstname: Prénom
-register_email: Adresse mail
-register_job: Secteur d'activité / métier
-
+url: https://backend-tumeplay.fabrique.social.gouv.fr/contacts
+fields:
+  - label: "Nom"
+    name: "name"
+    value: ""
+    type: "text"
+    col: 6
+    required: true
+    editable: true
+  - label: "Prénom"
+    name: "firstname"
+    value: ""
+    type: "text"
+    col: 6
+    required: true
+    editable: true
+  - label: "Adresse email"
+    name: "email"
+    value: ""
+    type: "email"
+    col: 6
+    required: true
+    editable: true
+  - label: "Secteur d'activité / métier"
+    name: "job"
+    value: ""
+    type: "text"
+    col: 6
+    required: true
+    editable: true
+  - label: "Type"
+    name: "type"
+    type: "text"
+    value: "référent"
+    required: true
+    editable: false
 
 list_section_items:
   - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -30,4 +61,3 @@ testimony:
   - title: Lorem ipsum dolor sit amet 2
     content: Lorem ipsum dolor sit amet, consectetur adipiscing elit 2.
     image: connor-wilkins.jpg
-
