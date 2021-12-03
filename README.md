@@ -60,13 +60,27 @@ Pour chaque graph, les attributs disponibles pour la propriété `type` sont :
 #### <a name="module-onboarding">Onboarding</a>
 
 Le module d'onboarding contient une page avec un formulaire personnalisable.
-Une requête POST est envoyée à la route spécifiée avec un payload dynamique en fonction des attributs `name` attribués au champs.
+Une requête POST est envoyée à la route spécifiée dans `url` avec un payload dynamique en fonction des attributs spécifiés dans `fields` :
 
+|  Champs | Requis  | Description  | Valeur par défaut 
+|---|---|---|---|
+| label | non | Titre du champ à afficher. | ∅ |
+| name | oui | Nom de la donnée dans le payload de la requête. | ∅ |
+| value | non | Valeur par défaut. | ∅ |
+| type | non | Type de champ HTML. Valeurs disponibles : `text` `email` `number` | text
+| col | non | Nombre de colonne (/12) pour l'affichage du champ. | 6 |
+| required | non | Champ requis dans le formulaire HTML. | false |
+| editable | non | Champ éditable, et donc affiché sur le formulaire pour l'utilisateur. | false
+
+#### <a name="module-newsletter">Newsletter</a>
+
+Le module de newsletter est un bloc sur la page d'accueil avec un champ unique pour renseigner son email.
+Le nom du champ contenant l'email dans le payload de la requête `POST` peut être spécifié dans `email_fieldname`. Vous pouvez également ajouter des ensembles clé/valeur dans le payload en les spécifiant dans `hidden_fields`.
 
 ## Contribuer
 
-Vous souhaitez créer un nouveau module dans la landing page ? Quelle belle initiative!
+Vous souhaitez créer/modifier module dans la landing page ? Quelle belle initiative!
 
-Afin que les autres startup puissent aussi en profiter, développez dans le sous-module git vers lequel pointe le dossier `/src`
+Afin que les autres projets puissent aussi en profiter, développez dans le sous-module git vers lequel pointe le dossier `/src`
 
-Vous trouverez toutes les indications dans [ici dans le README](https://github.com/SocialGouv/landing-core).
+Vous trouverez toutes les indications dans le [README du repository landing-core](https://github.com/SocialGouv/landing-core).
