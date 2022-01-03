@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/SocialGouv/landing-template/compare/v1.3.0...v1.3.1) (2021-12-03)
+
+
+### Bug Fixes
+
+* README improvements ([626b70d](https://github.com/SocialGouv/landing-template/commit/626b70dfe13f8646324d6177304cd3aa5f23088e))
+
 # [1.3.0](https://github.com/SocialGouv/landing-template/compare/v1.2.0...v1.3.0) (2021-12-03)
 
 
