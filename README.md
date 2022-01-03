@@ -19,7 +19,7 @@ Le dossier `/config-yml` contient l'ensemble des contenus de la landing page.
 
 `/config-yml/legals` : contenus relatifs aux obligations RGPD.
 
-`/config-yml/modules` : modules complémentaires développés par la communauté, voir section suivante.
+`/config-yml/modules` : modules complémentaires développés par la communauté, voir section associée.
 
 ## Modifier vos images
 
