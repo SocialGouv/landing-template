@@ -29,3 +29,12 @@ articles:
     content: >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit
     slug: article-3
+
+  - title: titre 3
+    category: catégorie C
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    image: hanguy.jpg
+    title_content: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    content: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    slug: article-3
