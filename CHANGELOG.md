@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/SocialGouv/landing-template/compare/v1.3.1...v1.4.0) (2022-01-03)
+
+
+### Bug Fixes
+
+* wording README ([5151820](https://github.com/SocialGouv/landing-template/commit/5151820a955a03388b3ed93b2e92319f4b0f7d47))
+
+
+### Features
+
+* update submodule index ([f5ce541](https://github.com/SocialGouv/landing-template/commit/f5ce541726d118605a754e21a6ad945a8c3adaff))
+
 ## [1.3.1](https://github.com/SocialGouv/landing-template/compare/v1.3.0...v1.3.1) (2021-12-03)
 
 
